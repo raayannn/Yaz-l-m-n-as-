@@ -1,0 +1,157 @@
+
+
+
+
+header.flex {
+    background-color: var(--footer-bg);
+    color: var(--white);
+    padding-block: 0.6rem;
+
+    
+
+    & .fa-solid {
+        color: var(--white);
+    }
+
+    & .logo .fa-solid {
+        font-size: 1.5rem;
+    }
+
+    & .sign-in:hover,
+    & .register:hover {
+        border: 1px solid rgb(152, 154, 189);
+        padding: 0.5rem 1.1rem;
+
+    }
+
+    & .cart:hover {
+        border: 1px solid rgb(152, 154, 189);
+        padding: 0.5rem 1.1rem 0.5rem 0.7rem;
+    }
+
+
+    & .logo:hover {
+        scale: 0.95;
+    }
+
+
+}
+
+ body {
+ background-color:var(--footer-bg)
+}
+
+
+
+
+p2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+p2 span {
+    color: #d9534f;
+    font-weight: 900;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
+h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+
+#cartItems {
+    width: 50%;
+    color: #fff;
+    background-color: #ffffff0e;
+    border: 1px solid #0000006e;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    padding: 25px;
+    margin-bottom: 25px;
+    max-height: 350px;
+    overflow-y: auto;
+    transition: all 0.3s ease-in-out;
+    text-align: center; 
+    font-size: 1rem; 
+    line-height: 1.5; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+#cartItems:hover {
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.2);
+}
+
+
+.checkout-button {
+    background: linear-gradient(90deg, #007BFF, #0056b3);
+    color: #fff;
+    font-size: 0.9rem; 
+    font-weight: bold;
+    padding: 8px 16px; 
+    border: none;
+    border-radius: 6px; 
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    width: 150px;
+    display: inline-block; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.checkout-button:hover {
+    background: linear-gradient(90deg, #0056b3, #003f7f);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.checkout-button:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+@media (max-width: 600px) {
+    #cartItems {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .checkout-button {
+        font-size: 0.9rem; 
+        padding: 8px 16px;
+    }
+
+    .total-price {
+        font-size: 1.6rem;
+    }
+}
+
+
+

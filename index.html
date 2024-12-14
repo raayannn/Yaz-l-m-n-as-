@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OYUN</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="shortcut icon" href="./images/chair-solid.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/pages/index.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+<body>
+
+
+
+
+    <div class="top-img">
+
+        <header id="headerElement" class="flex">
+
+            <div class="logo">
+                <i class="fa-solid fa-chair"></i>
+                <span style="font-weight: bold">OYUN</span>
+                <p style="letter-spacing: 1.8px;">Alışverişi</p>
+            </div>
+
+            <div class="links">
+                <a style="position: relative;" class="cart" onclick="goToCart()">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    ₺<span id="totalPrice">0</span>
+                    <span class="products-number" id="cart-total-items">0</span>
+                </a>
+
+
+
+
+          
+
+
+
+
+
+
+                <a class="sign-in" href="./pages/signin.html">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    GİRİŞ YAP</a>
+
+
+                <a class="register" href="./pages/register.html">
+                    <i class="fa-solid fa-user-plus"></i>
+                    ÜYE OL</a>
+            </div>
+
+
+        </header>
+
+
+
+
+        <section class="content">
+
+            <p class="lifestyle">Oyun Alışverişi</p>
+            <p class="men">
+                Büyük İndirim Fırsatları</p>
+            <p class="sale">!!!!<span>%50’ye Varan İndirim</span30>
+            </p>
+            <p class="free-shipping">
+                Fırsatları kaçırmayın, hemen alışverişe başlayın!</p>
+            <button>Alışverişe Başla</button>
+        </section>
+    </div>
+
+    <main>
+        <h1 class="recommended"> <i class="fa-solid fa-check"></i>
+
+            Sana Özel Ürünler</h1>
+
+        <section class="products flex">
+
+            <article class="card">
+
+           
+                    <img width="266" src="./images/kr.jpg" alt="" srcset="">
+              
+                <div style="width: 266px;" class="content">
+
+                    <h1 class="title">Oyuncu koltuğu</h1>
+                    <p class="description">
+                        Ergonomik tasarımı ve ayarlanabilir özellikleriyle uzun oyun seanslarında maksimum konfor sunar.
+                        Sağlam yapısı, nefes alabilir kumaş veya suni deri kaplamasıyla şıklığı ve dayanıklılığı bir
+                        arada sunar. Bel ve boyun destek yastıkları ekstra rahatlık sağlar.
+                    </p>
+
+                    <div class="flex" style="justify-content: space-between; padding-bottom: 0.7rem;">
+                        <div class="price">₺2050</div>
+                        
+
+
+
+
+                        <button class="add-to-cart flex" onclick="addToCart('Oyuncu koltuğu', 2050)">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Sepete Ekle
+                        </button>
+                        
+
+                    </div>
+                </div>
+
+            </article>
+
+
+
+            <article class="card">
+
+           
+                    <img width="266" src="./images/gp.jpg" alt="" srcset="">
+               
+                <div style="width: 266px;" class="content">
+
+                    <h1 class="title">Oyuncu Gamepad</h1>
+                    <p class="description">Ergonomik tasarımı, hassas kontrolleri ve rahat tutuşu ile uzun süreli oyun
+                        seansları için idealdir. Yüksek tepki hızı ve programlanabilir tuşlarıyla oyun deneyiminizi
+                        kişiselleştirir. Şık bir görünüme sahip olup, RGB aydınlatma ile ekstra tarz katar.</p>
+
+                    <div class="flex" style="justify-content: space-between; padding-bottom: 0.7rem;">
+                        <div class="price">₺115</div>
+
+                      
+                        <button class="add-to-cart flex" onclick="addToCart('Oyuncu Gamepad', 115)">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Sepete Ekle
+                        </button>
+
+                    </div>
+                </div>
+
+            </article>
+
+
+
+            <article class="card">
+
+      
+                    <img width="266" src="./images/ke.jpg" alt="" srcset="">
+        
+                <div style="width: 266px;" class="content">
+
+                    <h1 class="title">Oyun Klavyesi</h1>
+                    <p class="description">Oyun Klavyesi
+
+                        Hızlı tepki süresi, mekanik tuşlar ve RGB aydınlatma ile her tuşa basışta mükemmel hassasiyet
+                        sunar. Dayanıklı yapısı ve ergonomik tasarımı, uzun oyun seanslarında rahatlık sağlar.
+                        Programlanabilir tuşlar ve özel makrolar ile oyun deneyiminizi kişiselleştirin.</p>
+
+                    <div class="flex" style="justify-content: space-between; padding-bottom: 0.7rem;">
+                        <div class="price">₺250</div>
+
+                        <button class="add-to-cart flex" onclick="addToCart('Oyun Klavyesi', 250)">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Sepete Ekle
+                        </button>
+                        
+                    </div>
+                </div>
+
+            </article>
+
+
+
+
+
+            <article class="card">
+
+             
+                    <img width="266" src="./images/mo.jpg" alt="" srcset="">
+              
+                <div style="width: 266px;" class="content">
+
+                    <h1 class="title">Geming Mouse beyaz</h1>
+                    <p class="description">Yüksek hassasiyetli sensör, hızlı tepki süresi ve ergonomik tasarımıyla
+                        mükemmel kontrol sağlar. Hafif yapısı, uzun oyun seanslarında rahatlık sunar. RGB aydınlatma
+                        detaylarıyla şık bir görünüm elde ederken, özelleştirilebilir tuşlarıyla oyun deneyiminizi
+                        kişiselleştirebilirsiniz.</p>
+
+                    <div class="flex" style="justify-content: space-between; padding-bottom: 0.7rem;">
+                        <div class="price">₺1000</div>
+
+                        <button class="add-to-cart flex" onclick="addToCart('Geming Mouse beyaz', 1000)">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Sepete Ekle
+                        </button>
+                        
+
+
+
+                    </div>
+                </div>
+
+            </article>
+
+
+
+
+            <article class="card">
+
+          
+                    <img width="266" src="./images/pc.jpg" alt="" srcset="">
+         
+                <div style="width: 266px;" class="content">
+
+                    <h1 class="title">Oyuncu Bilgisayarı</h1>
+                    <p class="description">Yüksek performanslı işlemci, güçlü grafik kartı ve geniş bellek kapasitesi
+                        ile en zorlu oyunları bile akıcı bir şekilde çalıştırır. Gelişmiş soğutma sistemi uzun süreli
+                        kullanımlarda bile stabil performans sunar. RGB aydınlatmalı kasasıyla performansı şıklıkla
+                        birleştirir.</p>
+
+                    <div class="flex" style="justify-content: space-between; padding-bottom: 0.7rem;">
+                        <div class="price">₺7000</div>
+                        <button class="add-to-cart flex" onclick="addToCart('Oyuncu Bilgisayarı', 7000)">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Sepete Ekle
+                        </button>
+                        
+                    </div>
+                </div>
+
+            </article>
+
+
+
+
+
+
+
+
+            <article class="card">
+
+               
+                    <img width="266" src="./images/sh.jpg" alt="" srcset="">
+               
+                <div style="width: 266px;" class="content">
+
+                    <h1 class="title">Oyuncu Monitörü</h1>
+                    <p class="description">Yüksek çözünürlük, hızlı yenileme hızı ve düşük gecikme süresi ile akıcı ve
+                        net bir oyun deneyimi sunar. Geniş ekran ve canlı renkler, her ayrıntıyı net bir şekilde
+                        görmenizi sağlar. Ayarlanabilir stant ve göz yorgunluğunu azaltan teknolojilerle uzun süreli
+                        kullanım için idealdir.</p>
+
+                    <div class="flex" style="justify-content: space-between; padding-bottom: 0.7rem;">
+                        <div class="price">₺5000</div>
+
+                        <button class="add-to-cart flex" onclick="addToCart('Oyuncu Monitörü', 5000)">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Sepete Ekle
+                        </button>
+                        
+
+                    </div>
+                </div>
+
+            </article>
+
+
+
+
+            <article class="card">
+
+           
+                    <img width="266" src="./images/sm.jpg" alt="" srcset="">
+               
+                <div style="width: 266px;" class="content">
+
+                    <h1 class="title">Oyuncu Mikrofonlu Kulaklık</h1>
+                    <p class="description">Yüksek kaliteli ses ve net iletişim için optimize edilmiş mikrofonla mükemmel
+                        bir oyun deneyimi sunar. Rahat ve hafif tasarımı, uzun süreli kullanımda konfor sağlar. Gürültü
+                        engelleme teknolojisi ile çevresel sesleri izole eder, odaklanmanızı artırır. RGB aydınlatma
+                        detaylarıyla şıklığı tamamlar.</p>
+
+                    <div class="flex" style="justify-content: space-between; padding-bottom: 0.7rem;">
+                        <div class="price">₺500</div>
+
+                        <button class="add-to-cart flex" onclick="addToCart('Oyuncu Mikrofonlu Kulaklık', 500)">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Sepete Ekle
+                        </button>
+                        
+
+                    </div>
+                </div>
+
+            </article>
+
+
+
+
+
+
+
+
+            <article class="card" data-id="1" data-name="Oyuncu Masası" data-price="500" data-image="./images/ta.jpg">
+          
+                    <img width="266" src="./images/ta.jpg" alt="Oyuncu Masası">
+              
+                <div style="width: 266px;" class="content">
+                    <h1 class="title">Oyuncu Masası</h1>
+                    <p class="description">Geniş yüzeyi ve ergonomik tasarımıyla oyun ekipmanlarınız için mükemmel bir
+                        alan sunar. Sağlam yapısı, kablo yönetim sistemi ve RGB aydınlatma seçenekleriyle hem işlevsel
+                        hem de şık bir görünüm sağlar.</p>
+                    <div class="flex" style="justify-content: space-between; padding-bottom: 0.7rem;">
+                        <div class="price">₺5000</div>
+                        <button class="add-to-cart flex" onclick="addToCart('Oyuncu Masası', 5000)">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Sepete Ekle
+                        </button>
+                        
+                    </div>
+                </div>
+            </article>
+
+
+
+
+
+
+
+
+
+       
+         
+
+
+
+
+        </section>
+
+
+
+    </main>
+
+
+    <footer>
+        TASARIM VE GELİŞTİRME: 
+        <span>  RIYAN -
+             ABDELRAHMAN -
+             OSAMA -
+             RAMİ </span> 
+        
+
+    </footer>
+
+
+    <script src="./js/main.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/payment.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pay</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../css/pages/payment.css">
+</head>
+
+<body style="height: 100vh; display: grid; align-items: center; grid-template-rows: auto 1fr auto">
+    <header class="flex">
+        <a href="/" class="logo">
+            <i class="fa-solid fa-chair"></i>
+            <span style="font-weight: bold">OYUN</span>
+            <p style="letter-spacing: 1.8px;">Alışverişi</p>
+        </a>
+
+        <div class="links">
+            <a class="sign-in" href="./signin.html">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                GİRİŞ YAP
+            </a>
+
+            <a class="register" href="./register.html">
+                <i class="fa-solid fa-user-plus"></i>
+                ÜYE OL
+            </a>
+        </div>
+    </header>
+
+    <div class="payment-container">
+        <h3>Ödeme</h3>
+        <div id="cartItems"></div>
+        <p1> Toplam <span id="totalPrice"></span>₺</p1>
+
+        <div class="payment-form">
+            <label for="cardNumber">Kart Numarası</label>
+            <input type="text" id="cardNumber" placeholder="•••• •••• •••• ••••" required>
+
+            <label for="expiryDate">Son Kullanma Tarihi</label>
+            <input type="text" id="expiryDate" placeholder="MM/YY" required>
+
+            <label for="cvv">CVV</label>
+            <input type="password" id="cvv" placeholder="•••" required>
+
+            <button class="pay-button" onclick="pay()">Şimdi Öde</button>
+        </div>
+    </div>
+    <footer>
+      TASARIM VE GELİŞTİRME: 
+      <span>  RIYAN -
+           ABDELRAHMAN -
+           OSAMA -
+           RAMİ </span> 
+      
+
+  </footer>
+    <script src="../js/payment.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
